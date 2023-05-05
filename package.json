@@ -1,0 +1,47 @@
+{
+  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "bugs": "https://github.com/polkadot-js/ui/issues",
+  "engines": {
+    "node": ">=18.14"
+  },
+  "homepage": "https://github.com/polkadot-js/ui#readme",
+  "license": "Apache-2.0",
+  "packageManager": "yarn@3.2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polkadot-js/ui.git"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "3.2.3-2-x",
+  "versions": {
+    "git": "3.2.3-2-x",
+    "npm": "3.2.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "polkadot-dev-build-ts",
+    "build:release": "polkadot-ci-ghact-build",
+    "build:rollup": "polkadot-exec-rollup --config",
+    "clean": "polkadot-dev-clean-build",
+    "lint": "polkadot-dev-run-lint",
+    "postinstall": "polkadot-dev-yarn-only",
+    "test": "polkadot-dev-run-test --env browser",
+    "test:one": "polkadot-dev-run-test --env browser"
+  },
+  "devDependencies": {
+    "@polkadot/dev": "^0.73.6",
+    "@polkadot/x-bundle": "^12.1.1",
+    "@types/node": "^18.16.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-native": "^0.71.7"
+  },
+  "resolutions": {
+    "typescript": "^5.0.4"
+  }
+}

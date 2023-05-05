@@ -1,0 +1,37 @@
+{
+  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "bugs": "https://github.com/polkadot-js/ui/issues",
+  "description": "Shared logic that is usable accross all frameworks-specific areas",
+  "engines": {
+    "node": ">=16"
+  },
+  "homepage": "https://github.com/polkadot-js/ui/tree/master/packages/ui-shared#readme",
+  "license": "Apache-2.0",
+  "name": "@polkadot/ui-shared",
+  "repository": {
+    "directory": "packages/ui-shared",
+    "type": "git",
+    "url": "https://github.com/polkadot-js/ui.git"
+  },
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "type": "module",
+  "version": "3.2.3-2-x",
+  "main": "index.js",
+  "dependencies": {
+    "colord": "^2.9.3",
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@polkadot/util": "^12.1.1",
+    "@polkadot/util-crypto": "^12.1.1",
+    "@types/xmlserializer": "^0.6.3",
+    "xmlserializer": "^0.6.1"
+  },
+  "peerDependencies": {
+    "@polkadot/util": "*",
+    "@polkadot/util-crypto": "*"
+  }
+}
